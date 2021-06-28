@@ -29,15 +29,8 @@ var firebaseConfig = {
     var ref = firebase.database().ref(year);
     ref.on('value', (data) => {
      centers = data.val();
-     document.getElementById("result1").value ="<br>"+centers.toUpperCase();
-    })
-}
-
-if(document.getElementById('result1').value == ""){
-    
-}else{
-    
- for(i=0; i<100; i++) {
+     document.getElementById("result1").value = centers.toUpperCase();
+      for(i=0; i<100; i++) {
     // Random rotation
     var randomRotation = Math.floor(Math.random() * 360);
       // Random Scale
@@ -66,5 +59,5 @@ if(document.getElementById('result1').value == ""){
     confetti.style.animationDelay=randomAnimationDelay + 's';
     document.getElementById("confetti-wrapper").appendChild(confetti);
   }
-
+    })
 }
