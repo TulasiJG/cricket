@@ -66,8 +66,16 @@ for(i=0; i<100; i++) {
 if(document.getElementById('result1').value == ""){
     document.getElementById('wrapper').hide();
     document.getElementById('confetti-wrapper').hide();
+    document.getElementById('mainheader').show();
+    document.getElementById('submit').show();
+    document.getElementById('year').show();
+    document.getElementById('datavalue').show();
     
 }else{
     document.getElementById('wrapper').show();
     document.getElementById('confetti-wrapper').show();
+    document.getElementById('mainheader').show();
+    document.getElementById('submit').show();
+    document.getElementById('year').show();
+    document.getElementById('datavalue').show();
 }
