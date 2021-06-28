@@ -29,7 +29,7 @@ var firebaseConfig = {
     var ref = firebase.database().ref(year);
     ref.on('value', (data) => {
      centers = data.val();
-     document.getElementById("result1").value = centers.toUpperCase();
+     document.getElementById("result1").innerHTML = "br"+centers.toUpperCase();
       for(i=0; i<100; i++) {
     // Random rotation
     var randomRotation = Math.floor(Math.random() * 360);
