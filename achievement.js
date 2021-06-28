@@ -64,18 +64,18 @@ for(i=0; i<100; i++) {
   }
 
 if(document.getElementById('result1').value == ""){
-    document.getElementById('wr').hide();
-    document.getElementById('confetti-wrapper').hide();
-    document.getElementById('mainheader').show();
-    document.getElementById('submit').show();
-    document.getElementById('year').show();
-    document.getElementById('datavalue').show();
+    document.getElementById('wr').style.display=”none”;
+    document.getElementById('confetti-wrapper').style.display=”none”;
+    document.getElementById('mainheader').style.display=”block”;
+    document.getElementById('submit').style.display=”block”;
+    document.getElementById('year').style.display=”block”;
+    document.getElementById('datavalue').style.display=”block”;
     
 }else{
-    document.getElementById('wr').show();
-    document.getElementById('confetti-wrapper').show();
-    document.getElementById('mainheader').show();
-    document.getElementById('submit').show();
-    document.getElementById('year').show();
-    document.getElementById('datavalue').show();
+    document.getElementById('wr').style.display=”block”;
+    document.getElementById('confetti-wrapper').style.display=”block”;
+    document.getElementById('mainheader').style.display=”block”;
+    document.getElementById('submit').style.display=”block”;
+    document.getElementById('year').style.display=”block”;
+    document.getElementById('datavalue').style.display=”block”;
 }
