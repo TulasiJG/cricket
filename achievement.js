@@ -33,7 +33,11 @@ var firebaseConfig = {
     })
 }
 
-for(i=0; i<100; i++) {
+if(document.getElementById('result1').value == ""){
+    
+}else{
+    
+ for(i=0; i<100; i++) {
     // Random rotation
     var randomRotation = Math.floor(Math.random() * 360);
       // Random Scale
@@ -63,19 +67,4 @@ for(i=0; i<100; i++) {
     document.getElementById("confetti-wrapper").appendChild(confetti);
   }
 
-if(document.getElementById('result1').value == ""){
-    document.getElementById('wr').style.display=”none”;
-    document.getElementById('confetti-wrapper').style.display=”none”;
-    document.getElementById('mainheader').style.display=”block”;
-    document.getElementById('submit').style.display=”block”;
-    document.getElementById('year').style.display=”block”;
-    document.getElementById('datavalue').style.display=”block”;
-    
-}else{
-    document.getElementById('wr').style.display=”block”;
-    document.getElementById('confetti-wrapper').style.display=”block”;
-    document.getElementById('mainheader').style.display=”block”;
-    document.getElementById('submit').style.display=”block”;
-    document.getElementById('year').style.display=”block”;
-    document.getElementById('datavalue').style.display=”block”;
 }
