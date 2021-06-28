@@ -29,7 +29,7 @@ var firebaseConfig = {
     var ref = firebase.database().ref(year);
     ref.on('value', (data) => {
      centers = data.val();
-     document.getElementById("result1").innerHTML ="<br>"+centers.toUpperCase();
+     document.getElementById("result1").value ="<br>"+centers.toUpperCase();
     })
 }
 
@@ -62,3 +62,12 @@ for(i=0; i<100; i++) {
     confetti.style.animationDelay=randomAnimationDelay + 's';
     document.getElementById("confetti-wrapper").appendChild(confetti);
   }
+
+if(document.getElementById('result1').value == ""){
+    document.getElementById('wrapper').hide();
+    document.getElementById('confetti-wrapper').hide();
+    
+}else{
+    document.getElementById('wrapper').show();
+    document.getElementById('confetti-wrapper').show();
+}
